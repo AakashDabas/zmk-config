@@ -1,0 +1,6 @@
+if SHIELD_MINIDOV
+
+config ZMK_KEYBOARD_NAME
+    default "MINIDOV"
+
+endif

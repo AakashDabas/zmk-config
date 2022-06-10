@@ -1,0 +1,8 @@
+file_format: "1"
+id: minidov
+name: minidov
+type: shield
+url: https://github.com/AakashDabas/zmk-config
+requires: [pro_micro]
+features:
+  - keys
