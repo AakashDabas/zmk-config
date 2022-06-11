@@ -1,2 +1,5 @@
-config SHIELD_MINIDOV
-    def_bool $(shields_list_contains,minidov)
+config SHIELD_MINIDOV_LEFT
+    def_bool $(shields_list_contains,minidov_left)
+
+    config SHIELD_MINIDOV_RIGHT
+    def_bool $(shields_list_contains,minidov_right)
