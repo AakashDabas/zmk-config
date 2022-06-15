@@ -1,4 +1,4 @@
-#include "kyria_common.dtsi"
+#include "minidov_common.dtsi"
 
 / {
     chosen {
