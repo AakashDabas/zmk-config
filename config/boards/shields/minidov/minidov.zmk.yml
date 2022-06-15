@@ -1,0 +1,14 @@
+file_format: "1"
+id: minidov
+name: minidov
+type: shield
+url: https://github.com/AakashDabas/zmk-config
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - underglow
+  - display
+siblings:
+  - minidov_left
+  - minidov_right
