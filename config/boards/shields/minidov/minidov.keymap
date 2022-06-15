@@ -12,4 +12,7 @@
    &kp N1   &kp N2 &kp N3 &kp N4 &kp N5       &kp A   &kp B &kp C &kp D &kp E
    &kp N1   &kp N2 &kp N3 &kp N4 &kp N5       &kp A   &kp B &kp C &kp D &kp E
         &kp N1   &kp N2 &kp N3                     &kp A   &kp B &kp C
+                        >;
+                };
+        };        
 };
