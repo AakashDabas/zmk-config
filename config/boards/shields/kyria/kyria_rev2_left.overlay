@@ -1,4 +1,4 @@
-#include "minidov.dtsi"
+#include "kyria_rev2.dtsi"
 
 &kscan0 {
 	col-gpios

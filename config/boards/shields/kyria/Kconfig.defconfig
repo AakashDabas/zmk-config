@@ -1,18 +1,19 @@
-if SHIELD_MINIDOV_LEFT
+
+if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_REV2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "MINIDOV"
+	default "Kyria"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+	default y
 
 endif
 
-if SHIELD_MINIDOV_LEFT || SHIELD_MINIDOV_RIGHT
+if SHIELD_KYRIA
 
 config ZMK_SPLIT
-    default y
-
+	default y
+ 
 if ZMK_DISPLAY
 
 config I2C
@@ -32,7 +33,7 @@ config LVGL_HOR_RES_MAX
 	default 128
 
 config LVGL_VER_RES_MAX
-	default 32
+	default 64
 
 config LVGL_VDB_SIZE
 	default 64

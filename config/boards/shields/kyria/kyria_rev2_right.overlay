@@ -1,4 +1,10 @@
-#include "minidov.dtsi"
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "kyria_rev2.dtsi"
 
 &default_transform {
 	col-offset = <5>;
