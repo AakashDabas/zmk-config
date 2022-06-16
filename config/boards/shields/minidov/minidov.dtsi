@@ -45,7 +45,10 @@ RC(3,0) RC(3,1) RC(3,2)                  RC(3,5) RC(3,6) RC(3,7)
 		segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
-		multiplex-ratio = <63>;
+		multiplex-ratio = <31>;
+		segment-remap;
+		com-invdir;
+		com-sequential;
 		prechargep = <0x22>;
 	};
 };
