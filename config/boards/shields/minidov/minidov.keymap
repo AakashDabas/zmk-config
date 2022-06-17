@@ -2,16 +2,33 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
+
+
 / {
+        behaviors {
+                hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <200>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         bindings = <
-   &kp Q &kp W &kp F &kp P &kp B  &kp J &kp L &kp U &kp Y &kp BACKSPACE
-   &kp A &kp R &kp S &kp T &kp G  &kp M &kp N &kp E &kp I &kp O
-   &kp Z &kp X &kp C &kp D &kp V  &kp K &kp H &kp N1 &kp N1 &kp N1
-        &kp SPACE &kp N2 &kp N3    &kp SPACE   &kp B &kp C
+&kp Q &kp W &kp F &kp P &kp B                                &kp J &kp L &kp U &kp Y &kp APOSTROPHE
+&hm LGUI A &hm LALT R &hm LCTRL S &mt LSHIFT T &kp G         &kp M &hm RSHIFT N &hm RCTRL E &hm RALT I &hm RGUI O
+&kp Z &kp X &kp C &kp D &kp V                                &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
+&kp SPC &kp ESC &kp TAB                                      &kp BACKSPACE   &kp DELETE &kp RETURN
                         >;
                 };
         };        
