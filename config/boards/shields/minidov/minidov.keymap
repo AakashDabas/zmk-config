@@ -34,5 +34,15 @@
 &kp PERIOD &kp N0 &kp MINUS                                     &none &none &none
                         >;
                 };
+                
+                FUNC_layer {
+                        bindings = <
+&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
+&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
+&none &none &none                          &none &none &none
+                        >;
+                };
+
         };        
 };
