@@ -5,7 +5,7 @@
 #define BASE 0
 #define NUM 1
 #define FUNC 2
-#define NAV 2
+#define NAV 3
 
 &mt {
     flavor = "tap-preferred";
@@ -22,7 +22,7 @@
 &kp Q &kp W &kp F &kp P &kp B                                &kp J &kp L &kp U &kp Y &kp APOSTROPHE
 &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M &mt RSHIFT N &mt RCTRL E &mt RALT I &mt RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp ESC &kp SPC &kp TAB                                      &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
+&kp ESC &lt NAV SPACE &kp TAB                                      &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
@@ -47,8 +47,8 @@
                 NAV_layer {
                         bindings = <
 &none &none &none &none &none                           &none &none &none &none &none 
-&kp LGUI &kp LALT &kp LCTRL &LSHIFT &none               &CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW 
-&none &none &none &none &none                           &INSERT &kp HOME &PAGE_DOWN &PAGE_UP &END
+&kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none            &kp CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW 
+&none &none &none &none &none                           &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
 &none &none &none                                       &none &none &none
                         >;
                 };
