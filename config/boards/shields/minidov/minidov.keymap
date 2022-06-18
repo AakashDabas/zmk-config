@@ -22,7 +22,7 @@
 &kp Q &kp W &kp F &kp P &kp B                                &kp J &kp L &kp U &kp Y &kp APOSTROPHE
 &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M &mt RSHIFT N &mt RCTRL E &mt RALT I &mt RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp ESC &lt NAV SPACE &kp TAB                                      &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
+&kp ESC &lt NAV SPACE &lt NUM TAB                                      &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
