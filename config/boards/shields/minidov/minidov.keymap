@@ -14,19 +14,7 @@
 
 
 / {
-        behaviors {
-        lh_hm: left_hand_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5	6	7	8	9 15	16	17	18	19 25	26	27	28	29 33	34	35>;    // <---[[right-hand keys]]
-        };
-    };
-       keymap {
+        keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
@@ -44,24 +32,6 @@
 &kp SEMICOLON &kp N4 &kp N5 &kp N6 &kp EQUAL                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BACKSLASH                    &none &none &none &none &none 
 &kp PERIOD &kp N0 &kp MINUS                                     &none &none &none
-                        >;
-                };
-
-                FUNC_layer {
-                        bindings = <
-&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
-&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
-&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
-&none &none &none                          &none &none &none
-                        >;
-                };
-
-                NAV_layer {
-                        bindings = <
-&none &none &none &none &none                           &none &none &none &none &none 
-&kp LGUI &kp LALT &kp LCTRL &LSHIFT &none               &CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW 
-&none &none &none &none &none                           &INSERT &kp HOME &PAGE_DOWN &PAGE_UP &END
-&none &none &none                                       &none &none &none
                         >;
                 };
         };        
