@@ -5,6 +5,7 @@
 #define BASE 0
 #define NUM 1
 #define FUNC 2
+#define NAV 2
 
 &mt {
     flavor = "tap-preferred";
@@ -13,6 +14,18 @@
 
 
 / {
+        behaviors {
+        lh_hm: left_hand_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_POSITIONAL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <5	6	7	8	9 15	16	17	18	19 25	26	27	28	29 33	34	35>;    // <---[[right-hand keys]]
+        };
+    };
        keymap {
                 compatible = "zmk,keymap";
 
@@ -21,16 +34,34 @@
 &kp Q &kp W &kp F &kp P &kp B                                &kp J &kp L &kp U &kp Y &kp APOSTROPHE
 &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G         &kp M &mt RSHIFT N &mt RCTRL E &mt RALT I &mt RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp SPC &kp ESC &kp TAB                                      &kp RETURN &lt NUM DELETE &kp BACKSPACE
+&kp ESC &kp SPC &kp TAB                                      &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
-                Num_layer {
+                NUM_layer {
                         bindings = <
 &kp LEFT_BRACKET &kp N7 &kp N8 &kp N9 &kp RIGHT_BRACKET         &none &none &none &none &none 
 &kp SEMICOLON &kp N4 &kp N5 &kp N6 &kp EQUAL                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BACKSLASH                    &none &none &none &none &none 
 &kp PERIOD &kp N0 &kp MINUS                                     &none &none &none
+                        >;
+                };
+
+                FUNC_layer {
+                        bindings = <
+&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
+&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
+&none &none &none                          &none &none &none
+                        >;
+                };
+
+                NAV_layer {
+                        bindings = <
+&none &none &none &none &none                           &none &none &none &none &none 
+&kp LGUI &kp LALT &kp LCTRL &LSHIFT &none               &CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW 
+&none &none &none &none &none                           &INSERT &kp HOME &PAGE_DOWN &PAGE_UP &END
+&none &none &none                                       &none &none &none
                         >;
                 };
         };        
