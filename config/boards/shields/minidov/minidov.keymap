@@ -64,10 +64,10 @@
 
                 MISC_layer {
                         bindings = <
-&none &none &none &none &none        &none &none &none &none &none 
-&none &none &none &none &none         &none &none &none &none &none
-&none &none &none &none &none         &none &none &none &none &none 
-&none &none &bootloader                          &bootloader &none &none
+&bt BT_CLR      &none &none &none &none        &none &none &none &none &none 
+&none           &none &none &none &none         &none &none &none &none &none
+&none           &none &none &none &none         &none &none &none &none &none 
+&none           &none &bootloader                          &bootloader &none &none
                         >;
                 };
         };        
