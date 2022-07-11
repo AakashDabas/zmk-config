@@ -7,6 +7,7 @@
 #define FUNC 2
 #define NAV 3
 #define MISC 4
+#define NO_LEFT_MOD_layer 5
 
 &mt {
     flavor = "tap-preferred";
@@ -60,7 +61,7 @@
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                                   &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&lh_pht LGUI A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht RALT I &rh_pht RGUI O
+&kp A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
 &kp ESC &lt NAV SPACE &lt NUM TAB                                               &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
@@ -95,10 +96,19 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &none &none &none &none        &none &none &none &none &none 
+&bt BT_CLR      &none &none &none &none        &none &none &none &none &tog NO_LEFT_MOD_layer
 &none           &none &none &none &none         &none &none &none &none &none
 &none           &none &none &none &none         &none &none &none &none &none 
 &none           &none &bootloader                          &bootloader &none &none
+                        >;
+                };
+
+                NO_LEFT_MOD_layer {
+                        bindings = <
+&kp Q &kp W &kp F &kp P &kp B            &kp J &kp L &kp U &kp Y &kp SEMICOLON
+&kp A &kp R &kp S &kp T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
+&kp Z &kp X &kp C &kp D &kp V            &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
+&kp ESC &lt NAV SPACE &lt NUM TAB        &kp RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
         };        
