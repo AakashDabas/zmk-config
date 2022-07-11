@@ -88,7 +88,7 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &none &none &none &none        &none &none &none &none &tog NO_LEFT_MOD
+&bt BT_CLR      &none &none &none &none        &none &none &none &to NO_LEFT_MOD &to BASE
 &none           &none &none &none &none         &none &none &none &none &none
 &none           &none &none &none &none         &none &none &none &none &none 
 &none           &none &bootloader                          &bootloader &none &none
