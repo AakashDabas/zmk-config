@@ -3,11 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define NUM 1
-#define FUNC 2
-#define NAV 3
-#define MISC 4
-#define NO_LEFT_MOD 5
+#define NO_LEFT_MOD 1
+#define NUM 2
+#define FUNC 3
+#define NAV 4
+#define MISC 5
 
 &mt {
     flavor = "tap-preferred";
@@ -59,6 +59,15 @@
                         >;
                 };
 
+                NO_LEFT_MOD_layer {
+                        bindings = <
+&kp Q &kp W &kp F &kp P &kp B            &kp J &kp L &kp U &kp Y &kp SEMICOLON
+&kp A &kp R &kp S &kp T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
+&kp Z &kp X &kp C &kp D &kp V            &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
+&kp ESC &lt NAV SPACE &lt NUM TAB        &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
+                        >;
+                };
+
                 NUM_layer {
                         bindings = <
 &kp LEFT_BRACKET &kp N7 &kp N8 &kp N9 &kp RIGHT_BRACKET         &none &none &none &none &none 
@@ -88,19 +97,10 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &none &none &none &none        &none &none &none &to NO_LEFT_MOD &to BASE
+&bt BT_CLR      &none &none &none &none        &none &none &none &tog NO_LEFT_MOD &to BASE
 &none           &none &none &none &none         &none &none &none &none &none
 &none           &none &none &none &none         &none &none &none &none &none 
 &none           &none &bootloader                          &bootloader &none &none
-                        >;
-                };
-
-                NO_LEFT_MOD_layer {
-                        bindings = <
-&kp Q &kp W &kp F &kp P &kp B            &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&kp A &kp R &kp S &kp T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
-&kp Z &kp X &kp C &kp D &kp V            &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp ESC &lt NAV SPACE &lt NUM TAB        &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
         };        
