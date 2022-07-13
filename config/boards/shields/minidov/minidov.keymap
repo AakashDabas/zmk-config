@@ -55,16 +55,16 @@
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &kp A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                          &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&lt NAV ESC &kp SPACE &lt NUM TAB                                      &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
+&kp ESC &lt NAV SPACE &lt NUM TAB                                      &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
                 NO_LEFT_MOD_layer {
                         bindings = <
-&kp Q &kp W &kp F &kp P &kp B            &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&kp A &kp R &kp S &kp T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
-&kp Z &kp X &kp C &kp D &kp V            &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp ESC &lt NAV SPACE &lt NUM TAB        &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
+&kp Q &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp SEMICOLON
+&kp A &kp R &kp S &kp T &kp G                   &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
+&kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
+&kp ESC &lh_pht LALT SPACE &lt NUM TAB          &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
