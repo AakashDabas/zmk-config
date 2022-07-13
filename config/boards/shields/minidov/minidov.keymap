@@ -29,8 +29,8 @@
                 label = "LEFT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <150>;
-                quick-tap-ms = <100>;
+                tapping-term-ms = <125>;
+                quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
                 };
@@ -40,8 +40,8 @@
                 label = "RIGHT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <150>;
-                quick-tap-ms = <100>;
+                tapping-term-ms = <125>;
+                quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
                 };
@@ -53,7 +53,7 @@
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&kp A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
+&kp A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &kp O
 &kp Z &kp X &kp C &kp D &kp V                                          &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
 &kp ESC &lt NAV SPACE &lt NUM TAB                                      &lt MISC RETURN &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
@@ -97,8 +97,8 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &none &none &none &none        &none &none &none &tog NO_LEFT_MOD &to BASE
-&none           &none &none &none &none         &none &none &none &none &none
+&bt BT_CLR      &none &none &none &none         &none &none &none &tog NO_LEFT_MOD &to BASE
+&kp LGUI           &none &none &none &none         &none &none &none &none &kp RGUI
 &none           &none &none &none &none         &none &none &none &none &none 
 &none           &none &bootloader                          &bootloader &none &none
                         >;
