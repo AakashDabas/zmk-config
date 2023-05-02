@@ -28,8 +28,8 @@
                 label = "LEFT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <175>;
-                quick-tap-ms = <125>;
+                tapping-term-ms = <125>;
+                quick-tap-ms = <100>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
                 };
@@ -52,7 +52,7 @@
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&rh_pht LGUI A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G   &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
+&lh_pht LGUI A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G   &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                          &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
 &kp SPACE &lt NAV TAB &lt NUM ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
                         >;
