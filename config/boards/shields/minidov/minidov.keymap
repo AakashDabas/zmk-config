@@ -39,8 +39,8 @@
                 label = "RIGHT_POSITIONAL_HOLD_TAP";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <175>;
-                quick-tap-ms = <125>;
+                tapping-term-ms = <125>;
+                quick-tap-ms = <100>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
                 };
@@ -52,7 +52,7 @@
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&kp A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G            &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &kp O
+&rh_pht LGUI A &lh_pht LALT R &lh_pht LCTRL S &lh_pht LSHIFT T &kp G   &kp M &rh_pht RSHIFT N &rh_pht RCTRL E &rh_pht LALT I &rh_pht RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                          &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
 &kp SPACE &lt NAV TAB &lt NUM ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
                         >;
@@ -96,10 +96,10 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &none &none &none &none         &none &none &none &tog NO_LEFT_MOD &to BASE
-&kp LGUI           &none &none &none &none         &none &none &none &none &kp RGUI
+&bt BT_CLR      &BT_PRV &BT_NXT &BT_SEL 0 &none &none &none &none &tog NO_LEFT_MOD &to BASE
+&none           &none &none &none &none         &none &none &none &none &none
 &none           &none &none &none &none         &none &none &none &none &none 
-&none           &none &bootloader                          &bootloader &none &none
+&none           &none &bootloader               &bootloader &none &none
                         >;
                 };
         };        
