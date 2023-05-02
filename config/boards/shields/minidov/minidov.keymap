@@ -96,10 +96,10 @@
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &BT_PRV &BT_NXT &BT_SEL 0 &none &none &none &none &tog NO_LEFT_MOD &to BASE
-&none           &none &none &none &none         &none &none &none &none &none
-&none           &none &none &none &none         &none &none &none &none &none 
-&none           &none &bootloader               &bootloader &none &none
+&bt BT_CLR      &bt BT_PRV &bt BT_NXT &bt BT_SEL 0      &none &none &none &none &tog NO_LEFT_MOD &to BASE
+&none           &none &none &none &none                 &none &none &none &none &none
+&none           &none &none &none &none                 &none &none &none &none &none 
+&none           &none &bootloader                       &bootloader &none &none
                         >;
                 };
         };        
