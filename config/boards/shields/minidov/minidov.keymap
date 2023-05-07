@@ -14,10 +14,13 @@
 #define NAV 3
 #define MISC 4
 
+#define HM_TAPPING_TERM 300
+#define HM_TAPPING_TERM_FAST 200
+
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <280>;
+    tapping-term-ms = <HM_TAPPING_TERM>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
@@ -25,15 +28,33 @@ ZMK_BEHAVIOR(hml, hold_tap,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
+/* left-hand Shift HRM */
+ZMK_BEHAVIOR(hml_s, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+)
+
 /* right-hand HRMs */
 ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <280>;
+    tapping-term-ms = <HM_TAPPING_TERM>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
+)
+
+/* right-hand Shift HRM */
+ZMK_BEHAVIOR(hmr_s, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
 
 &mt {
@@ -58,7 +79,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G               &kp M &hmr RSHIFT N &hmr RCTRL E &hmr LALT I &hmr RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                          &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-&kp SPACE &lt NAV TAB &lt NUM ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
+&kp SPACE &lt NAV TAB &lt MISC ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
                         >;
                 };
                 
