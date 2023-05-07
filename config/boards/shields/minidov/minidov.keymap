@@ -15,7 +15,7 @@
 #define MISC 4
 
 #define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 200
+#define HM_TAPPING_TERM_FAST 150
 
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
