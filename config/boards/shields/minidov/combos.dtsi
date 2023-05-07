@@ -107,7 +107,7 @@
       bindings = <&kp BSPC>;
     };
     
-    combo_bspc {
+    combo_num_tog {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
