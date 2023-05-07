@@ -113,7 +113,7 @@
 
       key-positions = <LM1 LM0>;
       layers = <ALL>;
-      bindings = <&tog NUM>;
+      bindings = <&tog 1>;
     };
   };
 };
