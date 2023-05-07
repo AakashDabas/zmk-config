@@ -86,7 +86,7 @@
 
       key-positions = <LM1 RM1>;
       layers = <ALL>;
-      bindings = <&CAPSLOCK>;
+      bindings = <&kp CAPSLOCK>;
     };
 
     combo_return {
