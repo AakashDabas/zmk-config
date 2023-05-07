@@ -106,5 +106,14 @@
       layers = <ALL>;
       bindings = <&kp BSPC>;
     };
+    
+    combo_bspc {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LM1 LM0>;
+      layers = <ALL>;
+      bindings = <&tog NUM>;
+    };
   };
 };
