@@ -80,29 +80,11 @@
       bindings = <&kp GT>;
     };
 
-    combo_capsword {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM1 RM1>;
-      layers = <ALL>;
-      bindings = <&kp CAPSLOCK>;
-    };
-
-    combo_return {
-      timeout-ms = <COMBO_TERM_FAST>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LH2 LH1 LH0>;
-      layers = <ALL>;
-      bindings = <&kp RET>;
-    };
-
     combo_bspc {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <LH1 LH0>;
+      key-positions = <RT4 RT3>;
       layers = <ALL>;
       bindings = <&kp BSPC>;
     };
@@ -111,7 +93,7 @@
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <LM1 LM0>;
+      key-positions = <LB3 LB2 LB1>;
       layers = <ALL>;
       bindings = <&tog 1>;
     };
