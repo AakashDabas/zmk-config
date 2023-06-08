@@ -81,7 +81,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                          &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &hml LGUI A &hml LALT R &hml LCTRL S &hml_s LSHIFT T &kp G               &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &hmr RGUI O
-&kp Z &kp X &lt NAV C &kp D &lt MISC V                                          &lt MISC K &lt FUNC H &lt NUM COMMA &kp PERIOD &kp SLASH
+&kp Z &kp X &lt NAV C &kp D &lt MISC V                                          &lt MISC K &lt FUNC H &lt NUM COMMA &kp PERIOD &kp SPACE 
 &kp SPACE &lt NAV TAB &lt MISC ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
                         >;
                 };
