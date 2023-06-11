@@ -8,6 +8,33 @@
   combos {
     compatible = "zmk,combos";
 
+    combo_percent {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LT4 LT3>;
+      layers = <ALL>;
+      bindings = <&kp PERCENT>;
+    };
+
+    combo_exclamation {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LM4 LM3>;
+      layers = <ALL>;
+      bindings = <&kp EXCLAMATION>;
+    };
+
+    combo_at_the_rate {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LB4 LB3>;
+      layers = <ALL>;
+      bindings = <&kp AT>;
+    };
+
     combo_backslash {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
