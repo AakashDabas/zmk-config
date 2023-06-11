@@ -160,6 +160,33 @@
       layers = <ALL>;
       bindings = <&kp SLASH>;
     };
+
+    combo_plus {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT3 RT2>;
+      layers = <ALL>;
+      bindings = <&kp PLUS>;
+    };
+
+    combo_colon {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM3 RM2>;
+      layers = <ALL>;
+      bindings = <&kp COLON>;
+    };
+
+    combo_question {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RB3 RB2>;
+      layers = <ALL>;
+      bindings = <&kp QUESTION>;
+    };
     
     combo_return {
       timeout-ms = <COMBO_TERM_FAST>;
