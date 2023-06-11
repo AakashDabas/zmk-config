@@ -219,6 +219,64 @@
       bindings = <&kp PIPE>;
     };
 
+
+    // Right - Top row
+    combo_under {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LT1 LM1>;
+      layers = <ALL>;
+      bindings = <&kp UNDER>;
+    };
+
+    combo_double_quotes {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT2 RM2>;
+      layers = <ALL>;
+      bindings = <&kp DOUBLE_QUOTES>;
+    };
+
+    combo_apostrophe {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT3 RM3>;
+      layers = <ALL>;
+      bindings = <&kp APOSTROPHE>;
+    };
+
+
+    // Right - Mid row
+    combo_minus {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LM1 LB1>;
+      layers = <ALL>;
+      bindings = <&kp MINUS>;
+    };
+
+    combo_less_than {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM2 RB2>;
+      layers = <ALL>;
+      bindings = <&kp LESS_THAN>;
+    };
+
+    combo_greater_than {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM3 RB3>;
+      layers = <ALL>;
+      bindings = <&kp GREATER_THAN>;
+    };
+
     combo_hash {
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
