@@ -269,22 +269,22 @@
       bindings = <&kp MINUS>;
     };
 
-    combo_less_than {
+    combo_enter {
       timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM2 RB2>;
       layers = <ALL>;
-      bindings = <&kp LESS_THAN>;
+      bindings = <&kp ENTER>;
     };
 
-    combo_greater_than {
+    combo_delete {
       timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM3 RB3>;
       layers = <ALL>;
-      bindings = <&kp GREATER_THAN>;
+      bindings = <&kp DELETE>;
     };
 
     
