@@ -79,10 +79,9 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
                 default_layer {
                         bindings = <
-&kp Q &kp W &kp F &kp P &bootloader                                        &kp J &kp L &kp U &kp Y &kp SEMICOLON
-&hml LGUI A &hml LALT R &hml LCTRL S &hml_s LSHIFT T &kp G               &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &hmr RGUI O
-&kp Z &kp X &lt NAV C &kp D &lt MISC V                                          &lt MISC K &lt FUNC H &lt NUM COMMA &kp PERIOD &kp SPACE 
-&kp SPACE &lt NAV TAB &lt MISC ESC                                      &lt MISC DELETE &lt NUM BACKSPACE &lt FUNC RETURN
+&kp Q &kp W &kp F &kp P &bootloader                                        &kp J &kp L &kp U &kp Y &kp BACKSPACE
+&hml LGUI A &hml LALT R &hml LCTRL S &hml_s LSHIFT T &kp G               &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &kp SPACE
+&kp Z &kp X &lt NAV C &kp D &kp V                                          &lt MISC K &lt FUNC H &lt NUM COMMA &kp PERIOD &hmr RGUI O
                         >;
                 };
                 
@@ -90,8 +89,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                         bindings = <
 &kp LEFT_BRACKET &kp N7 &kp N8 &kp N9 &kp RIGHT_BRACKET         &none &none &none &none &none 
 &kp APOSTROPHE &kp N4 &kp N5 &kp N6 &kp EQUAL                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
-&kp GRAVE &kp N1 &kp N2 &kp N3 &kp BACKSLASH                    &none &none &none &none &none 
-&kp PERIOD &kp N0 &kp MINUS                                     &none &none &none
+&kp N0 &kp N1 &kp N2 &kp N3 &kp BACKSLASH                    &none &none &none &none &none 
                         >;
                 };
                 
@@ -100,7 +98,6 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 &kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
 &kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
 &kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
-&none &none &none                          &none &none &none
                         >;
                 };
 
@@ -109,16 +106,14 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 &none &none &none &none &none                           &none &none &none &none &none 
 &kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none            &kp CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW 
 &none &none &none &none &none                           &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
-&none &none &none                                       &none &none &none
                         >;
                 };
 
                 MISC_layer {
                         bindings = <
-&bt BT_CLR      &bt BT_PRV      &bt BT_NXT      &bt BT_SEL 0    &none       &none &none &none &none            &to BASE
-&sys_reset      &out OUT_BLE    &out OUT_USB    &none           &none       &none &none &none &none            &sys_reset
-&none           &none           &none           &none           &none       &none &none &none &none            &none 
-&none           &none           &bootloader                                 &bootloader &none &none
+&bt BT_CLR      &bt BT_PRV      &bt BT_NXT      &bt BT_SEL 0    &none             &none &none &none &none            &to BASE
+&sys_reset      &out OUT_BLE    &out OUT_USB    &none           &none             &none &none &none &none            &sys_reset
+&none           &none           &none           &none           &bootloader       &none &none &none &none            &none 
                         >;
                 };
         };        
