@@ -98,7 +98,7 @@
       bindings = <&kp RPAR>;
     };
 
-    combo_bracket_square_r {
+    combo_bracket_round_r {
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
