@@ -183,7 +183,7 @@
     };
 
     combo_ampersand {
-      timeout-ms = 60;
+      timeout-ms = <60>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT2 LM2>;
@@ -212,7 +212,7 @@
     };
 
     combo_pipe {
-      timeout-ms = 60;
+      timeout-ms = <60>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM2 LB2>;
@@ -287,6 +287,8 @@
       bindings = <&kp GREATER_THAN>;
     };
     
+
+    /* ENTER/Escape/Delete */
     /*combo_return {
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;

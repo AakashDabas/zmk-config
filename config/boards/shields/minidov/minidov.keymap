@@ -47,7 +47,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     global-quick-tap-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-key-positions = <KEYS_L>;
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
@@ -57,7 +57,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
     quick-tap-ms = <125>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-key-positions = <KEYS_L>;
 )
 
 &mt {
@@ -80,8 +80,8 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                        &kp J &kp L &kp U &kp Y &kp BACKSPACE
-&hml LGUI A &hml LALT R &hml LCTRL S &hml_s LSHIFT T &kp G               &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &kp SPACE
-&kp Z &kp X &lt NAV C &kp D &kp V                                          &lt MISC K &lt FUNC H &lt NUM COMMA &kp PERIOD &hmr RGUI O
+&hml LGUI A &hml LALT R &hml LCTRL S &hml_s LSHIFT T &kp G           &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &hmr RGUI O
+&kp Z &kp X &lt NAV C &kp D &kp V                                    &lt MISC K &lt FUNC H &lt NUM ENTER &kp DELETE &kp SPACE
                         >;
                 };
                 
