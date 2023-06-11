@@ -183,7 +183,7 @@
     };
 
     combo_ampersand {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
+      timeout-ms = 60;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT2 LM2>;
@@ -212,7 +212,7 @@
     };
 
     combo_pipe {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
+      timeout-ms = 60;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM2 LB2>;
