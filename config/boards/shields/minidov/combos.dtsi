@@ -169,6 +169,64 @@
       layers = <ALL>;
       bindings = <&kp QUESTION>;
     };
+
+
+    // Left - Top row
+    combo_grave {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT3 RM3>;
+      layers = <ALL>;
+      bindings = <&kp GRAVE>;
+    };
+
+    combo_ampersand {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT2 RM2>;
+      layers = <ALL>;
+      bindings = <&kp AMPERSAND>;
+    };
+
+    combo_asterisk {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT1 RM1>;
+      layers = <ALL>;
+      bindings = <&kp ASTERISK>;
+    };
+
+
+    // Left - Mid row
+    combo_tilde {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM3 RB3>;
+      layers = <ALL>;
+      bindings = <&kp TILDE>;
+    };
+
+    combo_pipe {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM2 RB2>;
+      layers = <ALL>;
+      bindings = <&kp PIPE>;
+    };
+
+    combo_hash {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM1 RB1>;
+      layers = <ALL>;
+      bindings = <&kp HASH>;
+    };
     
     /*combo_return {
       timeout-ms = <COMBO_TERM_SLOW>;
