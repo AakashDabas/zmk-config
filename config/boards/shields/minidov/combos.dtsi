@@ -286,16 +286,25 @@
       layers = <ALL>;
       bindings = <&kp GREATER_THAN>;
     };
-    
 
-    /* ENTER/Escape/Delete */
-    /*combo_return {
-      timeout-ms = <COMBO_TERM_SLOW>;
+    
+    /* Other */
+    tab {
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RB4 RB3>;
+      key-positions = <RT0 RM0>;
       layers = <ALL>;
-      bindings = <&kp RETURN>;
-    };*/
+      bindings = <&kp TAB>;
+    };
+
+    escape {
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LT0 LM0>;
+      layers = <ALL>;
+      bindings = <&kp ESCAPE>;
+    };
   };
 };
