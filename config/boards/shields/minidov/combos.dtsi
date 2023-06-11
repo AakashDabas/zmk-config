@@ -176,7 +176,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RT3 RM3>;
+      key-positions = <LT3 LM3>;
       layers = <ALL>;
       bindings = <&kp GRAVE>;
     };
@@ -185,7 +185,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RT2 RM2>;
+      key-positions = <LT2 LM2>;
       layers = <ALL>;
       bindings = <&kp AMPERSAND>;
     };
@@ -194,7 +194,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RT1 RM1>;
+      key-positions = <LT1 LM1>;
       layers = <ALL>;
       bindings = <&kp ASTERISK>;
     };
@@ -205,7 +205,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RM3 RB3>;
+      key-positions = <LM3 LB3>;
       layers = <ALL>;
       bindings = <&kp TILDE>;
     };
@@ -214,9 +214,18 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RM2 RB2>;
+      key-positions = <LM2 LB2>;
       layers = <ALL>;
       bindings = <&kp PIPE>;
+    };
+
+    combo_hash {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <LM1 LB1>;
+      layers = <ALL>;
+      bindings = <&kp HASH>;
     };
 
 
@@ -225,7 +234,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <LT1 LM1>;
+      key-positions = <RT1 RM1>;
       layers = <ALL>;
       bindings = <&kp UNDER>;
     };
@@ -254,7 +263,7 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <LM1 LB1>;
+      key-positions = <RM1 RB1>;
       layers = <ALL>;
       bindings = <&kp MINUS>;
     };
@@ -275,15 +284,6 @@
       key-positions = <RM3 RB3>;
       layers = <ALL>;
       bindings = <&kp GREATER_THAN>;
-    };
-
-    combo_hash {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM1 RB1>;
-      layers = <ALL>;
-      bindings = <&kp HASH>;
     };
     
     /*combo_return {
