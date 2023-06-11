@@ -2,6 +2,7 @@
 
 #define COMBO_TERM_FAST 35
 #define COMBO_TERM_SLOW 40
+#define COMBO_TERM_EXTRA_SLOW 45
 #define COMBO_GLOBAL_QUICKTAP 100
 
 / {
@@ -173,7 +174,7 @@
 
     // Left - Top row
     combo_grave {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT3 LM3>;
@@ -182,7 +183,7 @@
     };
 
     combo_ampersand {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT2 LM2>;
@@ -191,7 +192,7 @@
     };
 
     combo_asterisk {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT1 LM1>;
@@ -202,7 +203,7 @@
 
     // Left - Mid row
     combo_tilde {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM3 LB3>;
@@ -211,7 +212,7 @@
     };
 
     combo_pipe {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM2 LB2>;
@@ -220,7 +221,7 @@
     };
 
     combo_hash {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM1 LB1>;
@@ -231,7 +232,7 @@
 
     // Right - Top row
     combo_under {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RT1 RM1>;
@@ -240,7 +241,7 @@
     };
 
     combo_double_quotes {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RT2 RM2>;
@@ -249,7 +250,7 @@
     };
 
     combo_apostrophe {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RT3 RM3>;
@@ -260,7 +261,7 @@
 
     // Right - Mid row
     combo_minus {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM1 RB1>;
@@ -269,7 +270,7 @@
     };
 
     combo_less_than {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM2 RB2>;
@@ -278,7 +279,7 @@
     };
 
     combo_greater_than {
-      timeout-ms = <COMBO_TERM_SLOW>;
+      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM3 RB3>;
