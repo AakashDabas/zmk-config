@@ -9,7 +9,7 @@
     compatible = "zmk,combos";
 
     combo_percent {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT4 LT3>;
@@ -18,7 +18,7 @@
     };
 
     combo_caret {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM4 LM3>;
@@ -36,7 +36,7 @@
     };
 
     combo_backslash {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LT3 LT2>;
@@ -45,7 +45,7 @@
     };
 
     combo_dollar {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM3 LM2>;
@@ -72,7 +72,7 @@
     };
     
     combo_bracket_round_l {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM2 LM1>;
@@ -108,7 +108,7 @@
     };
 
     combo_bracket_curly_r {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RB1 RB2>;
@@ -117,7 +117,7 @@
     };
 
     combo_equal {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RT3 RT2>;
@@ -126,7 +126,7 @@
     };
 
     combo_semicolon {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM3 RM2>;
@@ -144,7 +144,7 @@
     };
 
     combo_plus {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RT4 RT3>;
@@ -153,7 +153,7 @@
     };
 
     combo_colon {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RM4 RM3>;
@@ -171,7 +171,7 @@
     };
     
     /*combo_return {
-      timeout-ms = <COMBO_TERM_FAST>;
+      timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RB4 RB3>;
