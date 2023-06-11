@@ -116,24 +116,6 @@
       bindings = <&kp RBRC>;
     };
 
-    combo_bracket_angled_l {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM1 LM0>;
-      layers = <ALL>;
-      bindings = <&kp LT>;
-    };
-
-    combo_bracket_angled_r {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM1 RM0>;
-      layers = <ALL>;
-      bindings = <&kp GT>;
-    };
-
     combo_equal {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
@@ -165,7 +147,7 @@
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RT3 RT2>;
+      key-positions = <RT4 RT3>;
       layers = <ALL>;
       bindings = <&kp PLUS>;
     };
@@ -174,7 +156,7 @@
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RM3 RM2>;
+      key-positions = <RM4 RM3>;
       layers = <ALL>;
       bindings = <&kp COLON>;
     };
@@ -183,18 +165,18 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RB3 RB2>;
+      key-positions = <RB4 RB3>;
       layers = <ALL>;
       bindings = <&kp QUESTION>;
     };
     
-    combo_return {
+    /*combo_return {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <RB4 RB3>;
       layers = <ALL>;
       bindings = <&kp RETURN>;
-    };
+    };*/
   };
 };
