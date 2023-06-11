@@ -17,22 +17,22 @@
       bindings = <&kp PERCENT>;
     };
 
-    combo_exclamation {
+    combo_caret {
       timeout-ms = <COMBO_TERM_FAST>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LM4 LM3>;
       layers = <ALL>;
-      bindings = <&kp EXCLAMATION>;
+      bindings = <&kp CARET>;
     };
 
-    combo_at_the_rate {
+    combo_exclamation {
       timeout-ms = <COMBO_TERM_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
       key-positions = <LB4 LB3>;
       layers = <ALL>;
-      bindings = <&kp AT>;
+      bindings = <&kp EXCLAMATION>;
     };
 
     combo_backslash {
@@ -132,6 +132,33 @@
       key-positions = <RM1 RM0>;
       layers = <ALL>;
       bindings = <&kp GT>;
+    };
+
+    combo_equal {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RT3 RT2>;
+      layers = <ALL>;
+      bindings = <&kp EQUAL>;
+    };
+
+    combo_semicolon {
+      timeout-ms = <COMBO_TERM_FAST>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RM3 RM2>;
+      layers = <ALL>;
+      bindings = <&kp SEMICOLON>;
+    };
+
+    combo_slash {
+      timeout-ms = <COMBO_TERM_SLOW>;
+      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+
+      key-positions = <RB3 RB2>;
+      layers = <ALL>;
+      bindings = <&kp SLASH>;
     };
     
     combo_return {
