@@ -264,7 +264,7 @@
       timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RM1 RB1>;
+      key-positions = <RM2 RB2>;
       layers = <ALL>;
       bindings = <&kp MINUS>;
     };
@@ -273,7 +273,7 @@
       timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
       global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 
-      key-positions = <RM2 RB2>;
+      key-positions = <RM1 RB1>;
       layers = <ALL>;
       bindings = <&kp ENTER>;
     };
