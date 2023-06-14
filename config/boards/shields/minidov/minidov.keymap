@@ -80,7 +80,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                 default_layer {
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B                                        &kp J &kp L &kp U &kp Y &kp BACKSPACE
-&hml LGUI A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G           &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &hmr FUNC O
+&hml LGUI A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G           &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &lt FUNC O
 &lt NAV Z &kp X &kp C &kp D &kp V                                    &lt MISC K &kp H &kp COMMA &kp PERIOD &lt NUM SPACE
                         >;
                 };
