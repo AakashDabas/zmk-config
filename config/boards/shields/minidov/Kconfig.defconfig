@@ -12,3 +12,5 @@ if SHIELD_MINIDOV_LEFT || SHIELD_MINIDOV_RIGHT
 
 config ZMK_SPLIT
     default y
+
+endif
