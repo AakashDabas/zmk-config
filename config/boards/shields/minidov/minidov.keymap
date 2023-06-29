@@ -83,7 +83,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 &lt NAV A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G          &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &lt FUNC O
 &kp Z &kp X &kp C &kp D &lt MISC V                             &lt MISC K &kp H &kp COMMA &kp PERIOD &lt NUM SPACE
                         >;
-                        label = "Home :)";
+                        label = "(=^ ◡ ^=)";
                 };
                 
                 NUM_layer {
