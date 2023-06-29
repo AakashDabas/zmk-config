@@ -79,9 +79,9 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
                 default_layer {
                         bindings = <
-&hml LGUI Q &kp W &kp F &kp P &kp B                              &bootloader &kp L &kp U &kp Y &bootloader
+&hml LGUI Q &kp W &kp F &kp P &kp B                              &kp J &kp L &kp U &kp Y &hmr RGUI BACKSPACE
 &lt NAV A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G          &kp M &hmr_s RSHIFT N &hmr RCTRL E &hmr LALT I &lt FUNC O
-&kp Z &kp X &kp C &kp D &lt MISC V                                    &bootloader &kp H &kp COMMA &kp PERIOD &lt NUM SPACE
+&kp Z &kp X &kp C &kp D &lt MISC V                                    &lt MISC K &kp H &kp COMMA &kp PERIOD &lt NUM SPACE
                         >;
                 };
                 
