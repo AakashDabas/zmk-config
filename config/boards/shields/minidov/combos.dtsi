@@ -1,310 +1,40 @@
 #include "zmk-nodefree-config-main/keypos_def/keypos_36keys.h"
 
-#define COMBO_TERM_FAST 35
-#define COMBO_TERM_SLOW 40
-#define COMBO_TERM_EXTRA_SLOW 45
-#define COMBO_GLOBAL_QUICKTAP 100
-
-/ {
-  combos {
-    compatible = "zmk,combos";
-
-    combo_percent {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT4 LT3>;
-      layers = <ALL>;
-      bindings = <&kp PERCENT>;
-    };
-
-    combo_caret {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM4 LM3>;
-      layers = <ALL>;
-      bindings = <&kp CARET>;
-    };
-
-    combo_exclamation {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LB4 LB3>;
-      layers = <ALL>;
-      bindings = <&kp EXCLAMATION>;
-    };
-
-    combo_backslash {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT3 LT2>;
-      layers = <ALL>;
-      bindings = <&kp BACKSLASH>;
-    };
-
-    combo_dollar {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM3 LM2>;
-      layers = <ALL>;
-      bindings = <&kp DOLLAR>;
-    };
-
-    combo_at_the_rate {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LB3 LB2>;
-      layers = <ALL>;
-      bindings = <&kp AT>;
-    };
-
-    combo_bracket_square_l {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT2 LT1>;
-      layers = <ALL>;
-      bindings = <&kp LBKT>;
-    };
-    
-    combo_bracket_round_l {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM2 LM1>;
-      layers = <ALL>;
-      bindings = <&kp LPAR>;
-    };    
-    
-    combo_bracket_curly_l {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LB2 LB1>;
-      layers = <ALL>;
-      bindings = <&kp LBRC>;
-    };
-
-    combo_bracket_square_r {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT2 RT1>;
-      layers = <ALL>;
-      bindings = <&kp RBKT>;
-    };
-
-    combo_bracket_round_r {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM1 RM2>;
-      layers = <ALL>;
-      bindings = <&kp RPAR>;
-    };
-
-    combo_bracket_curly_r {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RB1 RB2>;
-      layers = <ALL>;
-      bindings = <&kp RBRC>;
-    };
-
-    combo_equal {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT3 RT2>;
-      layers = <ALL>;
-      bindings = <&kp EQUAL>;
-    };
-
-    combo_semicolon {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM3 RM2>;
-      layers = <ALL>;
-      bindings = <&kp SEMICOLON>;
-    };
-
-    combo_slash {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RB3 RB2>;
-      layers = <ALL>;
-      bindings = <&kp SLASH>;
-    };
-
-    combo_plus {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT4 RT3>;
-      layers = <ALL>;
-      bindings = <&kp PLUS>;
-    };
-
-    combo_colon {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM4 RM3>;
-      layers = <ALL>;
-      bindings = <&kp COLON>;
-    };
-
-    combo_question {
-      timeout-ms = <COMBO_TERM_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RB4 RB3>;
-      layers = <ALL>;
-      bindings = <&kp QUESTION>;
-    };
-
-
-    // Left - Top row
-    combo_grave {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT3 LM3>;
-      layers = <ALL>;
-      bindings = <&kp GRAVE>;
-    };
-
-    combo_ampersand {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT2 LM2>;
-      layers = <ALL>;
-      bindings = <&kp AMPERSAND>;
-    };
-
-    combo_asterisk {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT1 LM1>;
-      layers = <ALL>;
-      bindings = <&kp ASTERISK>;
-    };
-
-
-    // Left - Mid row
-    combo_tilde {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM3 LB3>;
-      layers = <ALL>;
-      bindings = <&kp TILDE>;
-    };
-
-    combo_pipe {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM2 LB2>;
-      layers = <ALL>;
-      bindings = <&kp PIPE>;
-    };
-
-    combo_hash {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LM1 LB1>;
-      layers = <ALL>;
-      bindings = <&kp HASH>;
-    };
-
-
-    // Right - Top row
-    combo_under {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT1 RM1>;
-      layers = <ALL>;
-      bindings = <&kp UNDER>;
-    };
-
-    combo_double_quotes {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT2 RM2>;
-      layers = <ALL>;
-      bindings = <&kp DOUBLE_QUOTES>;
-    };
-
-    combo_apostrophe {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT3 RM3>;
-      layers = <ALL>;
-      bindings = <&kp APOSTROPHE>;
-    };
-
-
-    // Right - Mid row
-    combo_minus {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM2 RB2>;
-      layers = <ALL>;
-      bindings = <&kp MINUS>;
-    };
-
-    combo_enter {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM1 RB1>;
-      layers = <ALL>;
-      bindings = <&kp ENTER>;
-    };
-
-    combo_delete {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RM3 RB3>;
-      layers = <ALL>;
-      bindings = <&kp DELETE>;
-    };
-
-    
-    /* Other */
-    tab {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <RT0 RM0>;
-      layers = <ALL>;
-      bindings = <&kp TAB>;
-    };
-
-    escape {
-      timeout-ms = <COMBO_TERM_EXTRA_SLOW>;
-      global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
-
-      key-positions = <LT0 LM0>;
-      layers = <ALL>;
-      bindings = <&kp ESCAPE>;
-    };
-  };
-};
+#undef COMBO_HOOK
+#define COMBO_HOOK global-quick-tap-ms = <100>;
+
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 35
+
+ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(exclamation,       &kp EXCLAMATION,     LB4 LB3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(backslash,         &kp BACKSLASH,       LT3 LT2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(dollar,            &kp DOLLAR,          LM3 LM2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(at_the_rate,       &kp AT,              LB3 LB2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_square_l,  &kp LBKT,            LT2 LT1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_round_l,   &kp LPAR,            LM2 LM1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_curly_l,   &kp LBRC,            LB2 LB1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_square_r,  &kp RBKT,            RT2 RT1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_round_r,   &kp RPAR,            RM1 RM2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_curly_r,   &kp RBRC,            RB1 RB2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(equal,             &kp EQUAL,           RT3 RT2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(semicolon,         &kp SEMICOLON,       RM3 RM2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(slash,             &kp SLASH,           RB3 RB2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(plus,              &kp PLUS,            RT4 RT3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(colon,             &kp COLON,           RM4 RM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(question,          &kp QUESTION,        RB4 RB3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(grave,             &kp GRAVE,           LT3 LM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(ampersand,         &kp AMPERSAND,       LT2 LM2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(asterisk,          &kp ASTERISK,        LT1 LM1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(tilde,             &kp TILDE,           LM3 LB3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(pipe,              &kp PIPE,            LM2 LB2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(hash,              &kp HASH,            LM1 LB1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(under,             &kp UNDER,           RT1 RM1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(double_quotes,     &kp DOUBLE_QUOTES,   RT2 RM2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(apostrophe,        &kp APOSTROPHE,      RT3 RM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(minus,             &kp MINUS,           RM2 RB2,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(enter,             &kp ENTER,           RM1 RB1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(delete,            &kp DELETE,          RM3 RB3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(tab,               &kp TAB,             RT0 RM0,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(escape,            &kp ESCAPE,          LT0 LM0,     ALL, COMBO_TERM_FAST)
