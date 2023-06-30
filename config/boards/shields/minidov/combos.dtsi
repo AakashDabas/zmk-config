@@ -7,7 +7,7 @@
 #define COMBO_TERM_SLOW 35
 
 ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_FAST)
-ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(exclamation,       &kp EXCLAMATION,     LB4 LB3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(backslash,         &kp BACKSLASH,       LT3 LT2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(dollar,            &kp DOLLAR,          LM3 LM2,     ALL, COMBO_TERM_FAST)
@@ -32,9 +32,9 @@ ZMK_COMBO(pipe,              &kp PIPE,            LM2 LB2,     ALL, COMBO_TERM_F
 ZMK_COMBO(hash,              &kp HASH,            LM1 LB1,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(under,             &kp UNDER,           RT1 RM1,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(double_quotes,     &kp DOUBLE_QUOTES,   RT2 RM2,     ALL, COMBO_TERM_FAST)
-ZMK_COMBO(apostrophe,        &kp APOSTROPHE,      RT3 RM3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(apostrophe,        &kp APOSTROPHE,      RT3 RM3,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(minus,             &kp MINUS,           RM2 RB2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(enter,             &kp ENTER,           RM1 RB1,     ALL, COMBO_TERM_FAST)
-ZMK_COMBO(delete,            &kp DELETE,          RM3 RB3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(delete,            &kp DELETE,          RM3 RB3,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(tab,               &kp TAB,             RT0 RM0,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(escape,            &kp ESCAPE,          LT0 LM0,     ALL, COMBO_TERM_FAST)
