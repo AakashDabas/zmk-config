@@ -5,8 +5,8 @@
 
 #define COMBO_TERM_ExtraFAST 15
 #define COMBO_TERM_FAST 20
-#define COMBO_TERM_SLOW 40
-#define COMBO_TERM_ExtraSLOW 60
+#define COMBO_TERM_SLOW 50
+#define COMBO_TERM_ExtraSLOW 75
 
 ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_FAST)
@@ -15,7 +15,7 @@ ZMK_COMBO(backslash,         &kp BACKSLASH,       LT3 LT2,     ALL, COMBO_TERM_F
 ZMK_COMBO(dollar,            &kp DOLLAR,          LM3 LM2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(at_the_rate,       &kp AT,              LB3 LB2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(bracket_square_l,  &kp LBKT,            LT2 LT1,     ALL, COMBO_TERM_FAST)
-ZMK_COMBO(bracket_round_l,   &kp LPAR,            LM2 LM1,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(bracket_round_l,   &kp LPAR,            LM2 LM1,     ALL, COMBO_TERM_ExtraFAST)
 ZMK_COMBO(bracket_curly_l,   &kp LBRC,            LB2 LB1,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(bracket_square_r,  &kp RBKT,            RT2 RT1,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(bracket_round_r,   &kp RPAR,            RM1 RM2,     ALL, COMBO_TERM_ExtraFAST)
@@ -38,5 +38,5 @@ ZMK_COMBO(apostrophe,        &kp APOSTROPHE,      RT3 RM3,     ALL, COMBO_TERM_S
 ZMK_COMBO(minus,             &kp MINUS,           RM2 RB2,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(enter,             &kp ENTER,           RM1 RB1,     ALL, COMBO_TERM_ExtraSLOW)
 ZMK_COMBO(delete,            &kp DELETE,          RM3 RB3,     ALL, COMBO_TERM_ExtraSLOW)
-ZMK_COMBO(tab,               &kp TAB,             RT0 RM0,     ALL, COMBO_TERM_ExtraSLOW)
-ZMK_COMBO(escape,            &kp ESCAPE,          LT0 LM0,     ALL, COMBO_TERM_ExtraSLOW)
+ZMK_COMBO(tab,               &kp TAB,             RM0 RB0,     ALL, COMBO_TERM_ExtraSLOW)
+ZMK_COMBO(escape,            &kp ESCAPE,          LM0 LB0,     ALL, COMBO_TERM_ExtraSLOW)
