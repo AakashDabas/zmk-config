@@ -5,8 +5,8 @@
 
 #define COMBO_TERM_ExtraFAST 15
 #define COMBO_TERM_FAST 20
-#define COMBO_TERM_SLOW 50
-#define COMBO_TERM_ExtraSLOW 90
+#define COMBO_TERM_SLOW 90
+#define COMBO_TERM_ExtraSLOW 120
 
 ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_FAST)
