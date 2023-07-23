@@ -8,7 +8,7 @@
 #define COMBO_TERM_SLOW 90
 #define COMBO_TERM_ExtraSLOW 120
 
-ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(exclamation,       &kp EXCLAMATION,     LB4 LB3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(backslash,         &kp BACKSLASH,       LT3 LT2,     ALL, COMBO_TERM_FAST)
@@ -23,7 +23,7 @@ ZMK_COMBO(bracket_curly_r,   &kp RBRC,            RB1 RB2,     ALL, COMBO_TERM_F
 ZMK_COMBO(equal,             &kp EQUAL,           RT3 RT2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(semicolon,         &kp SEMICOLON,       RM3 RM2,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(slash,             &kp SLASH,           RB3 RB2,     ALL, COMBO_TERM_FAST)
-ZMK_COMBO(plus,              &kp PLUS,            RT4 RT3,     ALL, COMBO_TERM_FAST)
+ZMK_COMBO(plus,              &kp PLUS,            RT4 RT3,     ALL, COMBO_TERM_SLOW)
 ZMK_COMBO(colon,             &kp COLON,           RM4 RM3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(question,          &kp QUESTION,        RB4 RB3,     ALL, COMBO_TERM_FAST)
 ZMK_COMBO(grave,             &kp GRAVE,           LT3 LM3,     ALL, COMBO_TERM_SLOW)
