@@ -19,13 +19,13 @@
 #define GAME 5
 
 #define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 150
+#define HM_TAPPING_TERM_FAST 135
 
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM>;
-    quick-tap-ms = <150>;                // repeat on tap-into-hold
+    quick-tap-ms = <125>;                // repeat on tap-into-hold
     global-quick-tap-ms = <125>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -36,7 +36,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
 ZMK_BEHAVIOR(hml_s, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-    quick-tap-ms = <150>;                // repeat on tap-into-hold
+    quick-tap-ms = <125>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
@@ -46,7 +46,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap-ms = <150>;         // requires PR #1387
+    global-quick-tap-ms = <125>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L>;
     hold-trigger-on-release;             // delay positional check until key-release
@@ -56,7 +56,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 ZMK_BEHAVIOR(hmr_s, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-    quick-tap-ms = <150>;                // repeat on tap-into-hold
+    quick-tap-ms = <125>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L>;
 )
@@ -120,7 +120,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 &sys_reset      &out OUT_BLE    &out OUT_USB    &none           &none             &none         &none &none &none &none
 &to GAME        &none           &none           &none           &none             &none         &none &none &none &none 
                 >;
-                        label = "XXX";
+                        label = "XXX";wasd"
           };
 
                 GAME_LAYER {
