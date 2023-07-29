@@ -19,7 +19,7 @@
 #define GAME 5
 
 #define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 100
+#define HM_TAPPING_TERM_FAST 150
 
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
@@ -36,7 +36,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
 ZMK_BEHAVIOR(hml_s, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-    quick-tap-ms = <200>;                // repeat on tap-into-hold
+    quick-tap-ms = <150>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
@@ -56,7 +56,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 ZMK_BEHAVIOR(hmr_s, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-    quick-tap-ms = <200>;                // repeat on tap-into-hold
+    quick-tap-ms = <150>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L>;
 )
@@ -69,7 +69,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 };
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <125>;
     global-quick-tap;
 };
