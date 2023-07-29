@@ -120,7 +120,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 &sys_reset      &out OUT_BLE    &out OUT_USB    &none           &none             &none         &none &none &none &none
 &to GAME        &none           &none           &none           &none             &none         &none &none &none &none 
                 >;
-                        label = "XXX";wasd"
+                        label = "XXX"
           };
 
                 GAME_LAYER {
