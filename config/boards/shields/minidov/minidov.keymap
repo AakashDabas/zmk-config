@@ -127,7 +127,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                         bindings = <
 &kp Z           &kp C   &kp W   &kp R   &kp G                 &kp ESCAPE &none &none &to BASE &kp RGUI
 &kp LSHIFT      &kp A   &kp S   &kp D   &kp F                 &none &none &none &none &none
-&kp LCTRL       &none   &none   &KP SPACE   &none                 &none &none &none &none &none
+&kp LCTRL       &none   &none   &kp SPACE   &none                 &none &none &none &none &none
                         >;
                         label = "GAME";
           };
