@@ -125,9 +125,9 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
                 GAME_LAYER {
                         bindings = <
-&none  &kp N7 &kp w &kp r &kp tab                    &none &none &none &to BASE &kp rgui 
-&kp lshift  &kp a &kp s &kp d &kp f                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
-&kp space &kp N1 &kp N2 &kp N3 &kp escape                    &none &none &none &none &kp SPACE
+&none           &kp N7  &kp w   &kp r   &kp tab               &none &none &none &to BASE &kp rgui 
+&kp lshift      &kp a   &kp s   &kp d   &kp f                 &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp space       &kp N1  &kp N2  &kp N3  &kp escape            &none &none &none &none &kp SPACE
                         >;
                         label = "GAME";
           };
