@@ -127,7 +127,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                         bindings = <
 &none &none &none &none &none                           &none &none &none &none &none 
 &none &none &none &none &none                           &none &none &none &none &none
-&none &none &none &none &none                           &none &none &none &none &none
+&kp space       &kp N1  &kp N2  &kp N3  &kp escape            &none &none &none &none &kp SPACE
                         >;
                         label = "GAME";
           };
