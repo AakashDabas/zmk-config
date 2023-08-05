@@ -7,7 +7,7 @@
 #define COMBO_TERM_FAST 20
 #define COMBO_TERM_SLOW 90
 #define COMBO_TERM_ExtraSLOW 150
-#define LAYER
+#define LAYER 0
 
 ZMK_COMBO(percent,           &kp PERCENT,         LT4 LT3,     LAYER, COMBO_TERM_SLOW)
 ZMK_COMBO(caret,             &kp CARET,           LM4 LM3,     LAYER, COMBO_TERM_FAST)
