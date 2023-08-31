@@ -41,28 +41,3 @@ ZMK_COMBO(enter,             &kp ENTER,           RM1 RB1,     LAYER, COMBO_TERM
 ZMK_COMBO(delete,            &kp DELETE,          RM3 RB3,     LAYER, COMBO_TERM_ExtraSLOW)
 ZMK_COMBO(tab,               &kp TAB,             RM0 RB0,     LAYER, COMBO_TERM_ExtraSLOW)
 ZMK_COMBO(escape,            &kp ESCAPE,          LM0 LB0,     LAYER, COMBO_TERM_ExtraSLOW)
-
-
-ZMK_BEHAVIOR(win_sleep, macro,
-    wait-ms = <100>;
-    tap-ms = <5>;
-    bindings = <&kp LG(X) &kp U &kp S>;
-)
-
-ZMK_BEHAVIOR(copy, macro,
-    wait-ms = <100>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp c>, <&macro_release &kp LCTRL>;
-)
-
-ZMK_BEHAVIOR(paste, macro,
-    wait-ms = <100>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp V>, <&macro_release &kp LCTRL>;
-)
-
-ZMK_BEHAVIOR(cut, macro,
-    wait-ms = <100>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp X>, <&macro_release &kp LCTRL>;
-)
