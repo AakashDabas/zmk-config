@@ -53,7 +53,8 @@ ZMK_COMBO(escape,            &kp ESCAPE,          LM0 LB0,     LAYER, COMBO_TERM
                 , <&macro_tap &kp C>
                 , <&macro_release &kp LCTRL>
                 ;
-        },
+        };
+
         cut_macro: cut_macro {
             label = "cut_macro";
             compatible = "zmk,behavior-macro";
@@ -63,7 +64,8 @@ ZMK_COMBO(escape,            &kp ESCAPE,          LM0 LB0,     LAYER, COMBO_TERM
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LCTRL>
                 ;
-        },
+        };
+        
         paste_macro: paste_macro {
             label = "paste_macro";
             compatible = "zmk,behavior-macro";
