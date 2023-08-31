@@ -1,7 +1,7 @@
 #include "zmk-nodefree-config-main/keypos_def/keypos_36keys.h"
 
 #undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <75>;
+#define COMBO_HOOK global-quick-tap-ms = <50>;
 
 #define COMBO_TERM_ExtraFAST 15
 #define COMBO_TERM_FAST 20
