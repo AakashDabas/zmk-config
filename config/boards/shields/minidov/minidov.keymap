@@ -89,7 +89,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                 ;
         };
     };
-}
+};
 
 / {
         keymap {
