@@ -110,6 +110,41 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        altTab_macro: altTab_macro {
+            label = "altTab_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        ctrlTab_macro: ctrlTab_macro {
+            label = "ctrlTab_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        ctrlShiftTab_macro: ctrlShiftTab_macro {
+            label = "ctrlShiftTab_macro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
     };
 };
 
@@ -173,8 +208,8 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
           Shortcut_layer {
                         bindings = <
-&none &none &none &none &none             &none &none &none &none &none 
-&none &none &none &none &none             &none &none &none &none &none 
+&none &altTab_macro &ctrlShiftTab_macro &ctrlTab_macro &none             &none &none &none &none &none 
+&none &cut_macro &copy_macro &paste_macro &none             &none &none &none &none &none 
 &none &none &none &none &none             &none &none &none &none &none 
                         >;
                         label = "SHORT";
