@@ -135,7 +135,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
           Shortcut_layer {
                         bindings = <
-&none &none &copy &paste &none             &none &none &none &none &none 
+&none &none &copy &paste &cut             &none &none &none &none &none 
 &none &none &none &none &none             &none &none &none &none &none 
 &none &none &none &none &none             &none &none &none &none &none 
                         >;

@@ -46,11 +46,29 @@ ZMK_COMBO(escape,            &kp ESCAPE,          LM0 LB0,     LAYER, COMBO_TERM
 ZMK_BEHAVIOR(copy, macro,
     wait-ms = <100>;
     tap-ms = <5>;
-    bindings = <&kp LCTRL &kp C>;
+    bindings = 
+      <&macro_press &kp LCTRL>
+    , <&macro_tap &kp c>
+    , <&macro_release &kp LCTRL>
+    ;
 )
 
 ZMK_BEHAVIOR(paste, macro,
     wait-ms = <100>;
     tap-ms = <5>;
-    bindings = <&kp LCTRL &kp V>;
+    bindings = 
+      <&macro_press &kp LCTRL>
+    , <&macro_tap &kp V>
+    , <&macro_release &kp LCTRL>
+    ;
+)
+
+ZMK_BEHAVIOR(cut, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings = 
+      <&macro_press &kp LCTRL>
+    , <&macro_tap &kp X>
+    , <&macro_release &kp LCTRL>
+    ;
 )
