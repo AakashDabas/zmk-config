@@ -230,7 +230,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                         bindings = <
 &kp T &kp X &kp N7 &kp N8 &none                  &none &none &none &none &none
 &kp B &kp C &kp E &kp Q &kp I                   &none &none &none &none &none
-&kp M &kp N &kp N0 &kp N4 &kp N5                 &none &none &none &none &none
+&kp M &kp N &kp N0 &kp LALT &kp N5                 &none &none &none &none &none
                         >;
                         label = "GAMEL2";
                 };
