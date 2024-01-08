@@ -21,7 +21,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,9) RC(2,8) RC(2,7) RC(2,6) RC(2,5)
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-	debounce-press-ms = <0>;
+	debounce-press-ms = <3>;
 	debounce-release-ms = <3>;
 
         col-gpios
