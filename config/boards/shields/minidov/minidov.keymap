@@ -156,10 +156,11 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
 
                 default_layer {
                         bindings = <
-&kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
-&kp A &kp B &kp C &kp d &kp e &kp f &kp g &kp h &kp i &kp j
-&kp z &kp x &kp y &kp w &kp t &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
- &kp g &kp h &kp i &kp j &kp k &kp l
+&hml_s LGUI Q &kp W &kp F &kp P &kp B                              &kp J &kp L &kp U &hmr_s &kp Y &kp BACKSPACE
+&kp A &hml_s LALT R &hml_s LCTRL S &hml_s LSHIFT T &kp G          &kp M &hmr_s RSHIFT N &hmr_s RCTRL E &hmr_s LALT I &kp O
+&kp Z &kp X &kp C &kp D &kp V                             &kp K &kp H &kp COMMA &kp PERIOD &kp SPACE
+&kp Z &kp X &kp C &kp D &kp V                             &kp K &kp H &kp COMMA &kp PERIOD &kp SPACE
+&kp V                             &kp K &kp H &kp COMMA &kp PERIOD &kp SPACE
                         >;
                         label = "HOME";
                 };
