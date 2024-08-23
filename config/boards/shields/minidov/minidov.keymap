@@ -157,7 +157,7 @@ ZMK_BEHAVIOR(hmr_s, hold_tap,
                 default_layer {
                         bindings = <
 &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
-&kp a &kp b &kp c &kp d &kp e &kp f &kp g &kp h &kp i &kp j
+&kp A &kp B &kp C &kp d &kp e &kp f &kp g &kp h &kp i &kp j
 &kp z &kp x &kp y &kp w &kp t &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
  &kp g &kp h &kp i &kp j &kp k &kp l
                         >;
