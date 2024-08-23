@@ -8,8 +8,7 @@ manifest:
       url-base: https://github.com/AakashDabas
   projects:
     - name: zmk
-      remote: AakashDabas
-      revision: animated_widgets
+      remote: zmkfirmware
       import: app/west.yml
   self:
     path: config
