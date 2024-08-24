@@ -10,7 +10,7 @@
 &kp Q &kp W &kp F &kp P &kp B &kp F &kp G &kp H &kp I &kp J
 &kp A &kp R &kp S &kp T &kp G &kp F &kp G &kp H &kp I &kp J
 &kp Z &kp X &kp C &kp D &kp V &kp F &kp G &kp H &kp I &kp J
-&kp P &kp Q &kp RETURN &kp DELETE &kp BACKSPACE &kp F &kp G &kp H &kp I &kp J
+&kp P &kp Q &kp ESCAPE &kp SPACE &kp TAB &kp F &kp G &kp H &kp I &kp J
                         >;
                 };
         };        
