@@ -21,10 +21,26 @@
 
                 NAV {
                         bindings = <
-&bootloader &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp COLON
-&kp A &kp R &kp S &kp T &kp G                   &kp M &kp N &kp E &kp I &kp O
-&kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-        &kp ESCAPE &kp SPACE  &kp TAB                     &kp RETURN  &kp BACKSPACE &kp DELETE
+&bootloader &none &none &none &none        &none &none &none &none &none
+&none &none &none &none &none              &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
+&none &none &none &none &none              &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
+        &kp ESCAPE &kp SPACE  &kp TAB      &kp RETURN  &kp BACKSPACE &kp DELETE
+                        >;
+                };
+
+                NUM_layer {
+                        bindings = <
+&none  &kp N7 &kp N8 &kp N9 &none                    &none &none &none &none &none 
+&none  &kp N4 &kp N5 &kp N6 &none                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp N0 &kp N1 &kp N2 &kp N3 &none                    &none &none &none &none &kp SPACE
+                        >;
+                };
+
+                FUNC_layer {
+                        bindings = <
+&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
+&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
                         >;
                 };
         }; 
