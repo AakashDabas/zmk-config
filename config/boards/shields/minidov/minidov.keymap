@@ -15,8 +15,7 @@
 &kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
         &lt NAV ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &kp BACKSPACE &kp DELETE
                         >;
-                };
-        };        
+                };     
 
         NAV {
                         bindings = <
@@ -26,5 +25,6 @@
         &kp ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &kp BACKSPACE &kp DELETE
                         >;
                 };
+                
         }; 
 };
