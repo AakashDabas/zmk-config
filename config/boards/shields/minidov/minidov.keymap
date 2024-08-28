@@ -1,11 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define BASE 0
-#define NUM 1
-#define FUNC 2
-#define NAV 3
-
 /{
         keymap {
                 compatible = "zmk,keymap";
@@ -15,18 +10,8 @@
 &kp Q &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp COLON
 &kp A &kp R &kp S &kp T &kp G                   &kp M &kp N &kp E &kp I &kp O
 &kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-        &lt NAV ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &kp BACKSPACE &kp DELETE
+        &kp ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &kp BACKSPACE &kp DELETE
                         >;
                 };
-        };        
-
-        NAV {
-                        bindings = <
-&bootloader &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp COLON
-&kp A &kp R &kp S &kp T &kp G                   &kp M &kp N &kp E &kp I &kp O
-&kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-        &lt NAV ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &kp BACKSPACE &kp DELETE
-                        >;
-                };
-        }; 
+        };   
 };
