@@ -3,8 +3,8 @@
 
 #define BASE 0
 #define NAV 1
-#define NAV 2
-#define FUNC 1
+#define NUM 2
+#define FUNC 3
 
 /{
         keymap {
