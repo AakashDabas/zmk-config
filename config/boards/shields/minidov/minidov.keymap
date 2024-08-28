@@ -18,5 +18,14 @@
         &lt NAV ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
+
+                NAV {
+                        bindings = <
+&bootloader &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp COLON
+&kp A &kp R &kp S &kp T &kp G                   &kp M &kp N &kp E &kp I &kp O
+&kp none &kp none &kp none &kp none &kp none              &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
+        &kp ESCAPE &kp SPACE  &kp TAB                     &kp RETURN  &kp BACKSPACE &kp DELETE
+                        >;
+                };
         }; 
 };
