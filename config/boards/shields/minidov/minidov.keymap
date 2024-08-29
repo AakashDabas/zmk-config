@@ -13,10 +13,6 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
 
-#include "combos.dtsi"  // requires layer aliases
-#include "mouse.dtsi"
-#include "extra_keys.h"
-
 #define XXX &none
 #define ___ &trans
 
