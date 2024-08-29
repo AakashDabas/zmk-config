@@ -12,15 +12,6 @@
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/greek.dtsi"
-#include "zmk-helpers/unicode-chars/german.dtsi"
-
-#define DEF 0
-#define NAV 1
-#define FN 2
-#define NUM 3
-#define SYS 4
-#define UC 5
-#define MOUSE 6
 
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
