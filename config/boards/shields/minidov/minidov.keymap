@@ -49,10 +49,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
                 default_layer {
                         bindings = <
-&kp Q &kp W &kp F &kp P &kp B                   &kp J &kp L &kp U &kp Y &kp COLON
-&hml LGUI A &hml LALT R &hml LSHIFT S &hml LCTRL T &kp G                   &kp M &kp N &kp E &kp I &kp O
-&kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-        &lt NAV ESCAPE &kp SPACE  &kp TAB       &kp RETURN  &lt NUM BACKSPACE &lt FUNC DELETE
+&kp Q &kp W &kp F &kp P &kp B                                   &kp J &kp L &kp U &kp Y &kp COLON
+&hml LGUI A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G        &kp M &hml RSHIFT N &hml RCTRL E &hml RALT I &hml RGUI O
+&kp Z &kp X &kp C &kp D &kp V                                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
+        &lt NAV ESCAPE &kp SPACE  &kp TAB                       &kp RETURN  &lt NUM BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
