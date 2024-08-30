@@ -1,0 +1,48 @@
+#include <behaviors.dtsi>
+
+#define BASE 0
+#define NAV 1
+#define NUM 2
+#define FUNC 3
+
+/{
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+                        bindings = <
+&kp Q &kp W &kp F &kp P &kp B                                   &kp J &kp L &kp U &kp Y &kp SEMICOLON
+&kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O
+&lt NAV Z &kp X &kp C &kp D &kp V                                   &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
+        &kp LCTRL &kp SPACE  &kp LSHIFT                       &lt NUM RETURN  &kp BACKSPACE &kp RALT
+                        >;
+                };
+
+                NAV {
+                        bindings = <
+&bootloader &none &none &none &none        &bootloader &none &none &none &none
+&none &none &none &none &none              &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
+&none &none &none &none &none              &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
+        &kp ESCAPE &kp SPACE  &kp TAB      &kp RETURN  &kp BACKSPACE &kp DELETE
+                        >;
+                };
+
+                NUM_layer {
+                        bindings = <
+&kp EQUAL &kp N7 &kp N8 &kp N9 &none                    &kp LPAR &kp RPAR &kp LBRC &kp RBRC &none 
+&kp MINUS  &kp N4 &kp N5 &kp N6 &none                    &kp LBKT &kp RBKT  &none &none &none
+&kp N0 &kp N1 &kp N2 &kp N3 &none                    &none &none &none &none &none
+&none &none &none &none &none &none
+                        >;
+                };
+
+                FUNC_layer {
+                        bindings = <
+&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
+&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
+&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
+&none &none &none &none &none &none
+                        >;
+                };
+        }; 
+};
