@@ -52,7 +52,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 &kp Q &kp W &kp F &kp P &kp B                                   &kp J &kp L &kp U &kp Y &kp COLON
 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHIFT T &kp G        &kp M &hmr RSHIFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O
 &kp Z &kp X &kp C &kp D &kp V                                   &kp K &kp H &kp COMMA &kp PERIOD &kp SLASH
-        &lt NAV ESCAPE &kp SPACE  &kp TAB                       &kp RETURN  &lt NUM BACKSPACE &lt FUNC DELETE
+        &lt NAV ESCAPE &kp SPACE  &kp TAB                       &lt NUM RETURN  &kp BACKSPACE &lt FUNC DELETE
                         >;
                 };
 
@@ -68,7 +68,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
                 NUM_layer {
                         bindings = <
 &none  &kp N7 &kp N8 &kp N9 &none                    &none &none &none &none &none 
-&none  &kp N4 &kp N5 &kp N6 &none                    &none &kp RSHIFT &kp RCTRL E &kp RALT I &kp RGUI O
+&none  &kp N4 &kp N5 &kp N6 &none                    &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI
 &kp N0 &kp N1 &kp N2 &kp N3 &none                    &none &none &none &none &none
 &none &none &none &none &none &none
                         >;
