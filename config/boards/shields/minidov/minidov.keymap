@@ -11,16 +11,16 @@
 
                 default_layer {
                         bindings = <
-&kp Q &kp W &kp F &kp P &kp B                                   &kp J &kp L &kp U &kp Y &kp SEMICOLON
+&kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O
-&lt NAV Z &kp X &kp C &kp D &kp V                                   &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
-        &kp LSHIFT &kp SPACE  &kp LCTRL                       &lt NUM RETURN  &kp BACKSPACE &kp RALT
+&lt NAV Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
+&kp LSHIFT &kp SPACE  &kp LCTRL      &lt NUM RETURN  &kp BACKSPACE &kp RALT
                         >;
                 };
 
                 NAV {
                         bindings = <
-&bootloader &none &none &none &none        &bootloader &none &none &none &none
+&bootloader &none &none &none &none        &none &none &none &kp PIPE &kp BACKSLASH
 &none &none &none &none &none              &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
 &none &none &none &none &none              &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
         &kp ESCAPE &kp SPACE  &kp TAB      &kp RETURN  &kp BACKSPACE &kp DELETE
@@ -38,9 +38,9 @@
 
                 FUNC_layer {
                         bindings = <
-&kp F12 &kp F7 &kp F8 &kp F9 &none         &none &none &none &none &none 
-&kp F11 &kp F4 &kp F5 &kp F6 &none         &none &kp RSHIFT &kp RCTRL &kp RALT &kp RGUI 
-&kp F10 &kp F1 &kp F2 &kp F3 &none         &none &none &none &none &none 
+&kp F12 &kp F7 &kp F8 &kp F9 &none         &kp TAB &none &none &none &none 
+&kp F11 &kp F4 &kp F5 &kp F6 &none         &kp RGUI &none &none &none &none 
+&kp F10 &kp F1 &kp F2 &kp F3 &none         &kp DELETE &none &none &none &none 
 &none &none &none &none &none &none
                         >;
                 };
