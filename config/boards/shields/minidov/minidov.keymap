@@ -20,7 +20,7 @@
 
                 NAV {
                         bindings = <
-&bootloader &none &none &none &none        &none &none &none &kp PIPE &kp BACKSLASH
+&bootloader &none &none &none &none        &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &none &kp PIPE &kp BACKSLASH
 &none &none &none &none &none              &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
 &none &none &none &none &none              &kp INSERT &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END
         &kp ESCAPE &kp SPACE  &kp TAB      &kp RETURN  &kp BACKSPACE &kp DELETE
