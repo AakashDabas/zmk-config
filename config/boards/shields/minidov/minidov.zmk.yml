@@ -6,5 +6,5 @@ url: https://github.com/AakashDabas/zmk-config
 features:
   - keys
 siblings:
-  - minidov_left
-  - minidov_right
+  - _left
+  - _right
