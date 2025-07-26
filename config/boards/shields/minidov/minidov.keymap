@@ -13,7 +13,7 @@
                         bindings = <
 &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O
-&lt NAV Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
+&kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
 &kp LSHIFT &kp SPACE  &kp LCTRL      &lt NUM RETURN  &kp BACKSPACE &kp RALT
                         >;
                 };
@@ -45,4 +45,20 @@
                         >;
                 };
         }; 
+
+    behaviors {
+        // Custom Space behavior: tap=Space, hold=NAV, long-press=repeat Space
+        nav_space: nav_space_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NAV_SPACE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&mo>;
+        };
+    };
 };
+
+// Apply custom behavior to Space key
+&nav_space SPACE NAV
