@@ -1,9 +1,9 @@
 include:
   - board: nice_nano_v2
-    shield: minidov_left nice_view_adapter nice_view
-    # shield: minidov_left
+    # shield: minidov_left nice_view_adapter nice_view
+    shield: minidov_left
   - board: nice_nano_v2
-    shield: minidov_right nice_view_adapter nice_view
-    # shield: minidov_right
+    # shield: minidov_right nice_view_adapter nice_view
+    shield: minidov_right
   - board: nice_nano_v2
     shield: settings_reset
