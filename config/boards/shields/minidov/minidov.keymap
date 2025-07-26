@@ -14,10 +14,10 @@ behaviors {
             tapping-term-ms = <300>;
 
             bindings = <
-                &mo NAV         // Single tap → momentary NAV layer
-                &kp BACKSPACE   // Double tap → Backspace
-                &kp BACKSPACE   // Hold → Backspace
-                &kp BACKSPACE   // Double-tap + hold → Backspace hold (repeats)
+                &kp BACKSPACE   // single tap
+                &kp BACKSPACE   // double tap
+                &lt NAV BACKSPACE // single hold (tap-hold layer)
+                &kp BACKSPACE   // double tap + hold
             >;
         };
     };
