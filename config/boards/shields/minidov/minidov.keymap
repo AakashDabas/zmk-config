@@ -6,6 +6,21 @@
 #define FUNC 3
 
 /{
+behaviors {
+        td_backspace_nav: behavior_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+
+            tapping-term-ms = <300>;
+
+            bindings = <
+                &mo NAV         // Single tap → momentary NAV layer
+                &kp BACKSPACE   // Double tap → Backspace
+                &kp BACKSPACE   // Hold → Backspace
+                &kp BACKSPACE   // Double-tap + hold → Backspace hold (repeats)
+            >;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -14,7 +29,7 @@
 &kp Q &kp W &kp F &kp P &kp B        &kp J &kp L &kp U &kp Y &kp SEMICOLON
 &kp A &kp R &kp S &kp T &kp G        &kp M &kp N &kp E &kp I &kp O
 &lt NAV Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp COMMA &kp PERIOD &lt FUNC SLASH
-&kp LSHIFT &kp SPACE  &kp LCTRL      &lt NUM RETURN  &lt NAV BACKSPACE &kp RALT
+&kp LSHIFT &kp SPACE  &kp LCTRL      &lt NUM RETURN  &td_backspace_nav &kp RALT
                         >;
                 };
 
